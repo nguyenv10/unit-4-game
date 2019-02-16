@@ -1,0 +1,85 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>CrystalsCollector</title>
+        <!-- basic meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="">
+        <!-- includes css files-->
+        <link rel="stylesheet" href="assets/css/style.css"/>
+        <link rel="stylesheet" href="assets/css/reset.css"/>
+    </head>
+    <body>
+
+       
+       <!--container div-->
+        <div class="container">
+
+
+            <!--div for title-->
+
+            <div class="title-box">
+                <h1>CrystalsCollector!</h1>
+            </div>
+
+            <!--div for instructions-->
+
+            <div class="instructions-box">
+                <p>You will be fiven a randon number at the start of the game.
+                <br><br>  <!-- <br> is used for new line-->
+                There are four crystals below. By clicking on a crystal you will add a specif amount of points to your total score.
+                <br><br>
+                You win the game by matching your total score to the random number, you lose the game if total score goes above the
+                random number.
+                <br><br>
+                The value of each crystal is hidden from you until you click on it.
+                <br><br>
+                Each time when the game starts, the game will chnage the values of each crystal.</p>
+            </div>
+
+            <!--random number div-->
+
+            <div class="random-number-box">
+                
+                <p>Target Score : </p>
+
+                <p id="random-number"></p>
+
+            </div>
+
+            <!--results where total wins loses div-->
+
+            <div class="total-results-box">
+                <p>Wins : <span id="win"></span></p>
+                <p>Losses : <span id="lose"></span></p>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <!--crystals div-->
+
+            <div class="crystals-box">
+                <img id="crystal-1" onClick="crystal_1_click()" src="./assets/images/1.png" width="100px">
+                <img id="crystal-2" onClick="crystal_2_click()" src="./assets/images/2.png" width="100px">
+                <img id="crystal-3" onClick="crystal_3_click()" src="./assets/images/3.png" width="100px">
+                <img id="crystal-4" onClick="crystal_4_click()" src="./assets/images/4.png" width="100px">
+            </div>
+
+
+            <!--total score div-->
+
+            <div class="total-score-box">
+                <p>Your total score is </p>
+                <p id="score">0</p>
+            </div>
+            
+        </div>
+    </body>
+
+    <!--includes game script-->
+    <script src="assets/javascript/game.js"></script>
+</html>

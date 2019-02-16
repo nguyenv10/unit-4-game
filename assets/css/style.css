@@ -1,0 +1,55 @@
+
+.title-box
+{
+    background-color: #b33c00;
+    color:#fff;
+    width:40%;
+    padding: 20px 0px;
+}
+
+.title-box h1
+{
+    margin-left: 10px;
+}
+
+.instructions-box
+{
+    background-color: #ffe6ff;
+    color:green;
+    width:40%;
+
+}
+
+.random-number-box
+{
+    background-color: darkgreen;
+    color:#fff;
+    width:20%;
+    float: left;
+    min-height: 100px;
+    
+}
+.random-number-box p, .total-results-box p , .total-score-box p ,.instructions-box p
+{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.total-results-box
+{
+    background-color: green;
+    float: left;
+    width:20%;
+    min-height: 100px;
+    color: #fff;
+}
+.crystals-box
+{
+    margin-top: 70px;
+}
+
+.total-score-box
+{
+    background-color: #000;
+    color:#fff;
+    width:40%;
+}
